@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+        <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>imc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card color="primary">
+    <ion-card-content>
+        <p id="aviso"> </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list class="ion-padding">
+    <ion-item>
+      <ion-label floating>Digite sua altura</ion-label>
+      <ion-input type="number" placeholder="1.65" (input)="altura=$event.target.value"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Digite sua altura</ion-label>
+      <ion-input type="number" placeholder="1.65" (input)="peso=$event.target.value"></ion-input>
+    </ion-item>
+  </ion-list>
+    <ion-button expand="block" (click)="calcular()">Calcular</ion-button>
+
+    
+<!-- informaçoes sobre o IMC dos dados inseridos -->
+<div *ngIf="imc > 0">
+
+</div>
+</ion-content>
+
+

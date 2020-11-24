@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inputs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<ion-input value="custom"></ion-input>
+<ion-input colo="danger" placeholder="informe o CEP " clearInput></ion-input>
+<ion-input max="5" type="number" placeholder="informe o ano de nascimento"></ion-input>
+<ion-input value="disable">disable</ion-input>
+<ion-input value="readonly">readonly</ion-input>
+
+<ion-item>
+  <ion-label  position="floating">Nome Completo</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Stacked Label</ion-label>
+  <ion-input></ion-input>
+ 
+  <ion-label>Data de nascimento</ion-label>
+  <ion-datetime displayFormat="MM DD YYYY" placeholder="Selecione a data"></ion-datetime>
+</ion-item>
+
+<ion-item>
+<ion-button color="dark">Gravar</ion-button>
+</ion-item>
+
+</ion-content>
